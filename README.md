@@ -3,6 +3,11 @@
 install docker
 
 ```
+mkdir -p /root/container/svn/apache
+touch /root/container/svn/apache/passwd
+```
+then 
+```
 docker run -d \
     --name svn-server \
     -p 21080:80 \
